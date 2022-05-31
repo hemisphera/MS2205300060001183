@@ -1,7 +1,7 @@
 codeunit 50100 "HelloWorld"
 {
 
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"System Initialization", 'OnAfterLogin', '', true, false)]
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::LogInManagement, 'OnAfterLogInStart', '', true, false)]
     local procedure OnAfterLogin()
     var
         TenantId: Text;
